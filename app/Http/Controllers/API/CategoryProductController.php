@@ -36,7 +36,7 @@ class CategoryProductController extends Controller
 
         $validator = Validator::make($datas,[
             'category_id' => 'required|numeric',
-            'product_id' => 'required|numeric',
+            'product_id'  => 'required|numeric',
         ]);
 
         if($validator->fails()){
@@ -91,7 +91,7 @@ class CategoryProductController extends Controller
 
         $validator = Validator::make($datas,[
             'category_id' => 'required|numeric',
-            'product_id' => 'required|numeric',
+            'product_id'  => 'required|numeric',
         ]);
 
         if($validator->fails()){
