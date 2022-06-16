@@ -15,7 +15,7 @@ class ProductController extends Controller
 
         if(!count($products)){
             return response([
-                'message' => 'There is no data in the categories table'
+                'message' => 'There is no data in the products table'
             ],200);
         }
 
