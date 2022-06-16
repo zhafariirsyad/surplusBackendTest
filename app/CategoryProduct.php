@@ -11,4 +11,11 @@ class CategoryProduct extends Model
     protected $fillable = [
         'category_id','product_id'
     ];
+
+    public function categories(){
+        return $this->belongsTo('App\Category','category_id');
+    }
+    public function products(){
+        return $this->belongsTo('App\Product','product_id');
+    }
 }
